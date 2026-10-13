@@ -2,6 +2,8 @@
 
 **Reconstructing published Titanic passenger outcomes through deterministic cross-dataset matching.**
 
+`Python` · `Pandas` · `Record Linkage` · `Data Provenance` · `Reproducibility`
+
 [View the Kaggle Notebook](https://www.kaggle.com/code/kalidenaiarys/titanic-historical-record-linkage-1309-verified) · [Kaggle Titanic Competition](https://www.kaggle.com/competitions/titanic)
 
 > **Methodology disclosure:** This is **not a machine-learning prediction model**. The Vanderbilt Titanic3 dataset includes published survival outcomes corresponding to Kaggle's test passengers. Matching records and looking up those outcomes is fundamentally different from predicting unknown labels. A perfect competition submission score, if separately documented, should **not** be described as 100% ML accuracy.
@@ -49,6 +51,11 @@ Generated files in `output/`: `submission.csv`, `matching_audit.csv`, `verificat
 
 **Data are not bundled here**. Obtain them from their original publishers and observe applicable competition and dataset terms.
 
+## Notebook
+
+- [Clean and readable analysis notebook in this repository](notebooks/titanic_historical_record_linkage.ipynb). This version is designed for reproducible execution and does not bundle historical source files.
+- [Executed Kaggle notebook with its saved outputs](https://www.kaggle.com/code/kalidenaiarys/titanic-historical-record-linkage-1309-verified). The GitHub notebook intentionally separates explanation from intermediate debugging steps.
+
 ## Results and verification
 
 The script checks expected row counts, identity uniqueness, one-to-one matching, field consistency, train-label agreement, and input/output hashes. The recorded run found 396 exact test name+ticket matches and 22 additional test matches after name normalization. There were no ambiguous or unmatched test records.
@@ -84,6 +91,6 @@ My contributions to this project:
 
 The repository documents the approach, code and verification artifacts. The results should not be interpreted as evidence that a machine-learning model learned to predict survival.
 
-## Repository status
+## Reuse and scope
 
-Portfolio documentation and reproducibility checks are under review in the accompanying pull request. Source datasets are linked rather than redistributed.
+This repository publishes the matching implementation and verification metadata, rather than rehosting the Kaggle and Vanderbilt datasets. Reproduction requires the original source files and their respective use permissions. It should be evaluated as a record-linkage project, **not** a survival-prediction model.
