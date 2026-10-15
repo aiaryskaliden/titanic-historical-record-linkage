@@ -79,18 +79,6 @@ The score of a separate competition submission cannot be confirmed from `verific
 
 Historical dataset courtesy of the Vanderbilt University Department of Biostatistics.
 
-## Project ownership and contributions
-
-**Project lead:** [@aiaryskaliden](https://github.com/aiaryskaliden)
-
-My contributions to this project:
-- Proposed the historical record-linkage approach to the Kaggle Titanic task.
-- Researched and selected the Vanderbilt Titanic3 dataset as an external comparison source.
-- Investigated the dataset comparisons and analyzed the verification results.
-- Prepared and documented the Kaggle workflow and its findings.
-
-The repository documents the approach, code and verification artifacts. The results should not be interpreted as evidence that a machine-learning model learned to predict survival.
-
 ## Reuse and scope
 
 This repository publishes the matching implementation and verification metadata, rather than rehosting the Kaggle and Vanderbilt datasets. Reproduction requires the original source files and their respective use permissions. It should be evaluated as a record-linkage project, **not** a survival-prediction model.
